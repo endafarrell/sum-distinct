@@ -1,0 +1,12 @@
+Usage:
+    cat xy.csv | sum-distinct 
+
+I use this script when counting the response times of a web service
+per minute. Often I take the access logs, sed/awk/cut the time of
+day and the milliseconds so that my "x" is the HH:MM and the "Y" is
+the duration. When done, I have the total duration per minute 
+(sorted lexically).
+
+It's perl as I often need to bring this to new servers which often
+are "bare bones".
+
